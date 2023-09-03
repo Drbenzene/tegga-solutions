@@ -1,5 +1,13 @@
 import type { Config } from 'tailwindcss'
 
+// module.exports = {
+//   mode: 'jit',
+//   purge: [
+//     './public/**/*.html',
+//     './src/**/*.{js,jsx,ts,tsx,vue}',
+//   ],
+//  }
+
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,6 +16,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors:{
+        "primary": "#DDAA33"
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
